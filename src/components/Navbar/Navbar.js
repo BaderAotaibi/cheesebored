@@ -34,7 +34,7 @@ const Navbar = () => {
         <ul className="navbar navbar-nav navbar-expand-lg">
           <li className="nav-item"> <Link to="/cheeses">All <span>🧀 </span></Link></li>
           { isUserAuthenticated ? 
-            <li  className="nav-item"><span class="logout-btn" onClick={logoutHandle}>Logout</span></li>
+            <li  className="nav-item"><span className="logout-btn" onClick={logoutHandle}>Logout</span></li>
             :
             <>
               <li className="nav-item"><Link to="/login">Login</Link></li>

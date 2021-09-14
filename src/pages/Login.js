@@ -17,7 +17,7 @@ const Login = () => {
     window.localStorage.setItem('token' ,token)
   }
   const changeHandle = (e) =>{
-    setRegisterData({...registerData, [e.target.name]: e.target.value })
+    setRegisterData({ ...registerData, [e.target.name]: e.target.value })
   }
   const submitHandle = async (e) => {
     e.preventDefault()
