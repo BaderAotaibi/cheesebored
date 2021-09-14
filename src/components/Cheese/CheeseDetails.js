@@ -15,7 +15,7 @@ const CheeseDetails = () => {
       setCheese(data)
     }
     getCheese()
-  },[])
+  },[id])
 
   return (
     <>
@@ -35,8 +35,8 @@ const CheeseDetails = () => {
               <h2>Origin</h2>
               <p>{cheese.origin}</p>
               <hr />
-              <h2>tag</h2>
-              <p>{cheese.name}</p>
+              <h2>Written By: </h2>
+              <p>{cheese.user.username}</p>
               <hr />
               <Link to="/cheeses" className="btn btn-lg btn-dark">More Cheese</Link>
             </div>
