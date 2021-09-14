@@ -35,8 +35,8 @@ const CheeseDetails = () => {
               <h2>Origin</h2>
               <p>{cheese.origin}</p>
               <hr />
-              <h2>Written By: </h2>
-              <p>{cheese.user.username}</p>
+              <h2>Tag: </h2>
+              <p>{cheese.name}</p>
               <hr />
               <Link to="/cheeses" className="btn btn-lg btn-dark">More Cheese</Link>
             </div>
